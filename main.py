@@ -182,7 +182,7 @@ plant_db = [
         "description": "물 속에서 자라는 초록색 이끼 공 모양 식물로 관리가 간편합니다.",
         "sunlight": "그늘", "water": "적음", "size": "작음",
         "type": ["모양이 독특한 식물"], "mood": "귀여움", "personality": ["조용"]
-    }
+    },
     {
         "name": "무늬산호수",
         "description": "잎에 하얀 무늬가 있는 실내식물로 밝은 느낌을 줘요.",
