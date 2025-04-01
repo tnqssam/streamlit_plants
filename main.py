@@ -244,7 +244,6 @@ plant_db = [
         "type": ["공기 정화"], "mood": "심플", "personality": ["차분"], "colors": ["초록"]
     }
 ]
-]
 
 # 추천 알고리즘
 
