@@ -7,7 +7,7 @@ st.write("🪴 아래 질문에 답해보세요! 당신에게 딱 맞는 식물�
 name = st.text_input("👤 당신의 이름은 무엇인가요?")
 
 personality = st.selectbox("🧠 당신의 성격은 어떤가요?", [
-    "👉 보기를 선택하세요",
+    "보기를 선택하세요",
     "🕊️ 차분하고 조용해요",
     "🏃 활발하고 활동적이에요",
     "📋 꼼꼼한 편이에요",
@@ -15,34 +15,34 @@ personality = st.selectbox("🧠 당신의 성격은 어떤가요?", [
 ])
 
 location = st.selectbox("🏠 식물을 어디에 두고 싶나요?", [
-    "👉 보기를 선택하세요",
+    "보기를 선택하세요",
     "🛋️ 실내(책상, 방 안 등)",
     "🌤️ 실외(베란다, 마당 등)"
 ])
 
 sunlight = st.selectbox("☀️ 햇빛은 얼마나 들어오나요?", [
-    "👉 보기를 선택하세요",
+    "보기를 선택하세요",
     "🌞 햇빛이 잘 들어요",
     "⛅ 반쯤 햇빛이 들어요(반그늘)",
     "🌑 햇빛이 거의 안 들어요(그늘)"
 ])
 
 watering = st.selectbox("💧 물은 얼마나 자주 줄 수 있나요?", [
-    "👉 보기를 선택하세요",
+    "보기를 선택하세요",
     "🌊 매일 줄 수 있어요",
     "🌦️ 일주일에 2~3번 줄 수 있어요",
     "💤 자주 못 줄 수도 있어요"
 ])
 
 size = st.selectbox("📏 키우고 싶은 식물의 크기는?", [
-    "👉 보기를 선택하세요",
+    "보기를 선택하세요",
     "🌱 작고 귀여운 식물",
     "🌿 중간 크기의 식물",
     "🌳 조금 큰 식물도 괜찮아요"
 ])
 
 mood = st.selectbox("🎨 어떤 분위기의 식물을 원하나요?", [
-    "👉 보기를 선택하세요",
+    "보기를 선택하세요",
     "🌸 귀엽고 예쁜 식물",
     "🧼 심플하고 깔끔한 식물",
     "🌀 신기하고 독특한 식물"
@@ -83,8 +83,8 @@ def recommend_plant():
 if st.button("🌼 식물 추천받기"):
     if not name:
         st.warning("이름을 입력해주세요!")
-    elif (personality.startswith("👉") or location.startswith("👉") or sunlight.startswith("👉") or
-          watering.startswith("👉") or size.startswith("👉") or mood.startswith("👉")):
+    elif (personality.startswith("보기를 선택하세요") or location.startswith("보기를 선택하세요") or sunlight.startswith("보기를 선택하세요") or
+          watering.startswith("보기를 선택하세요") or size.startswith("보기를 선택하세요") or mood.startswith("보기를 선택하세요")):
         st.warning("모든 항목을 선택해주세요!")
     elif len(plant_type) == 0 or len(colors) == 0:
         st.warning("식물의 종류와 색깔을 1개 이상 선택해주세요!")
